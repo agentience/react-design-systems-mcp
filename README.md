@@ -93,6 +93,10 @@ The server supports the following command line parameters:
 - `--port <number>` or `-p <number>`: Port for SSE transport. Default: `3001`
 - `--bind <address>` or `-b <address>`: Bind address for SSE transport. Default: `0.0.0.0`
 
+### Using with Claude
+
+For optimal results when using this MCP server with Claude, consider using a specialized system prompt. We provide an example system prompt that configures Claude as an expert Cloudscape developer with AWS Amplify Gen 2 knowledge. See [Claude Cloudscape & Amplify Expert](prompts/claude-cloudscape-amplify-prompt.md) for details.
+
 ### Advanced Configuration Examples
 
 #### With Custom Parameters
@@ -254,6 +258,10 @@ generate_component_code({"componentId": "button", "variant": "primary"})
 - [Usage Guide](docs/usage-guide.md)
 - [Docker Deployment Guide](DOCKER.md)
 - [Docker Publishing Guide](docs/docker-publishing-guide.md)
+
+### System Prompts
+
+- [Claude Cloudscape & Amplify Expert](prompts/claude-cloudscape-amplify-prompt.md) - Example system prompt for using Claude as an expert Cloudscape developer with AWS Amplify Gen 2
 
 ## Roadmap
 
